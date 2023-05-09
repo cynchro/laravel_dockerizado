@@ -23,4 +23,6 @@ RUN composer install --no-dev --no-interaction --optimize-autoloader
 
 RUN chown -R www-data:www-data storage bootstrap/cache
 
+RUN php artisan storage:link
+
 EXPOSE 80

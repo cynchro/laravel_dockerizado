@@ -25,4 +25,6 @@ RUN chown -R www-data:www-data storage bootstrap/cache
 
 RUN php artisan storage:link
 
+#RUN composer dump-autoload
+
 EXPOSE 80
